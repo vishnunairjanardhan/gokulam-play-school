@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Baloo 2", cursive;
+  --font-body: "Nunito", sans-serif;
+
+  --color-brand-orange: #FF7900;
+  --color-brand-yellow: #FFD43B;
+  --color-brand-red: #F51D2A;
+  --color-brand-green: #27AE60;
+  --color-brand-blue: #159BEF;
+  --color-brand-navy: #172D63;
+  --color-brand-cream: #FFF9E9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FFFFFF;
+  color: var(--color-brand-navy);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
