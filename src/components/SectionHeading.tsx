@@ -5,6 +5,8 @@ interface SectionHeadingProps {
   subtitle?: string
   centered?: boolean
   badgeColor?: string
+  titleClassName?: string
+  subtitleClassName?: string
 }
 
 export default function SectionHeading({
@@ -14,6 +16,8 @@ export default function SectionHeading({
   subtitle,
   centered = true,
   badgeColor = 'bg-orange-100 text-orange-600',
+  titleClassName = 'text-[#172D63]',
+  subtitleClassName = 'text-gray-600',
 }: SectionHeadingProps) {
   const parts = highlight ? title.split(highlight) : [title]
 
@@ -24,7 +28,7 @@ export default function SectionHeading({
           {badge}
         </span>
       )}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#172D63] leading-tight">
+      <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight ${titleClassName}`}>
         {highlight ? (
           <>
             {parts[0]}
@@ -36,7 +40,7 @@ export default function SectionHeading({
         )}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className={`mt-4 text-lg max-w-2xl mx-auto leading-relaxed ${subtitleClassName}`}>
           {subtitle}
         </p>
       )}

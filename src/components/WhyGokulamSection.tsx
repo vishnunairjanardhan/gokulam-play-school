@@ -73,9 +73,9 @@ export default function WhyGokulamSection() {
             highlight="Bright Futures."
             subtitle="Every aspect of Gokulam is thoughtfully designed to give your child the best possible start to their learning journey."
             badgeColor="bg-orange-500/20 text-orange-300"
+            titleClassName="text-white"
+            subtitleClassName="text-slate-200"
           />
-          {/* Override text color for dark bg */}
-          <style>{`.why-heading h2 { color: white !important; } .why-heading p { color: #CBD5E1 !important; }`}</style>
         </motion.div>
 
         {/* We need white text here, so override via inline styles */}
