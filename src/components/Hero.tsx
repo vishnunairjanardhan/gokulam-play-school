@@ -53,7 +53,7 @@ export default function Hero() {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-orange-100 mb-6">
               <span className="text-lg" role="img" aria-label="Star">⭐</span>
-              <span className="text-sm font-semibold text-[#172D63]">Play School • Nursery • Junior KG</span>
+              <span className="text-sm font-semibold text-[#172D63]">Play School • Nursery • Junior KG • Senior KG</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#172D63] leading-tight mb-6">
@@ -82,7 +82,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
-              Welcome to Gokulam Play School, where little minds explore, friendships blossom,
+              Welcome to Gokulam Nursery, where little minds explore, friendships blossom,
               and every day brings a new adventure.
             </p>
 

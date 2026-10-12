@@ -61,7 +61,7 @@ export default function ContactSection() {
 
     // Build a WhatsApp message as the enquiry channel
     const msg = [
-      `*New Admission Enquiry — Gokulam Play School*`,
+      `*New Admission Enquiry — Gokulam Nursery*`,
       ``,
       `👤 Parent: ${form.parentName}`,
       `📱 Phone: ${form.phone}`,
@@ -92,7 +92,7 @@ export default function ContactSection() {
     }
   }
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello! I would like to know more about Gokulam Play School admissions.')}`
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello! I would like to know more about Gokulam Nursery admissions.')}`
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -297,6 +297,7 @@ export default function ContactSection() {
                       <option value="Play School">Play School</option>
                       <option value="Nursery">Nursery</option>
                       <option value="Junior KG">Junior KG</option>
+                      <option value="Senior KG">Senior KG</option>
                     </select>
                   </div>
 

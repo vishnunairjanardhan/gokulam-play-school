@@ -40,11 +40,11 @@ export default function Navbar() {
           <button
             onClick={() => handleNavClick('#home')}
             className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF7900] rounded-lg"
-            aria-label="Gokulam Play School — Go to top"
+            aria-label="Gokulam Nursery — Go to top"
           >
             <img
               src={logoImg}
-              alt="Gokulam Play School — Play School | Nursery | Junior KG"
+              alt="Gokulam Nursery — Play School | Nursery | Junior KG | Senior KG"
               className="h-12 sm:h-14 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
             />
           </button>

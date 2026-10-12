@@ -9,7 +9,7 @@ const quickLinks = [
   { href: '#contact', label: 'Contact' },
 ]
 
-const programs = ['Play School', 'Nursery', 'Junior KG']
+const programs = ['Play School', 'Nursery', 'Junior KG', 'Senior KG']
 
 const PHONE_1 = '9820733457'
 const PHONE_2 = '9820733476'
@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="bg-white rounded-2xl p-2.5 inline-block mb-4 shadow-sm hover:scale-105 transition-transform">
               <img
                 src={logoImg}
-                alt="Gokulam Play School Logo"
+                alt="Gokulam Nursery Logo"
                 className="h-14 w-auto object-contain"
               />
             </div>
@@ -124,9 +124,9 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-blue-300">
-          <p>© {currentYear} Gokulam Play School. All rights reserved.</p>
+          <p>© {currentYear} Gokulam Nursery. All rights reserved.</p>
           <p className="text-center">
-            Play School • Nursery • Junior KG — Dombivli East, Maharashtra
+            Play School • Nursery • Junior KG • Senior KG — Dombivli East, Maharashtra
           </p>
         </div>
       </div>

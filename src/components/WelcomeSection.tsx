@@ -65,7 +65,7 @@ export default function WelcomeSection() {
             badge="Welcome"
             title="A Happy Place to "
             highlight="Learn, Play & Grow"
-            subtitle="At Gokulam Play School, we believe the early years are the most magical. We create a warm, nurturing environment where children feel safe to explore, express themselves, and build the foundations for a lifetime of learning."
+            subtitle="At Gokulam Nursery, we believe the early years are the most magical. We create a warm, nurturing environment where children feel safe to explore, express themselves, and build the foundations for a lifetime of learning."
           />
         </motion.div>
 
@@ -103,7 +103,7 @@ export default function WelcomeSection() {
             "Every child is naturally curious and full of potential. At Gokulam, we simply create the right
             space for that spark to grow into a lifelong love of learning."
           </p>
-          <p className="mt-4 text-orange-300 font-semibold text-sm">— Gokulam Play School Team</p>
+          <p className="mt-4 text-orange-300 font-semibold text-sm">— Gokulam Nursery Team</p>
         </motion.div>
       </div>
     </section>

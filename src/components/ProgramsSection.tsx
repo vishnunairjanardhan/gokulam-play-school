@@ -58,6 +58,24 @@ const programs = [
     ],
     IllustrationEl: JuniorKGIllustration,
   },
+  {
+    id: 'skg',
+    label: 'Senior KG',
+    labelColor: 'bg-purple-100 text-purple-700',
+    accentColor: '#8B5CF6',
+    bgColor: 'bg-purple-50',
+    borderColor: 'border-purple-200',
+    icon: '🚀',
+    iconBg: 'bg-[#8B5CF6]',
+    description:
+      'Preparing confident learners with advanced phonics, early math concepts, reading, and primary school readiness.',
+    highlights: [
+      'Advanced phonics, reading & writing',
+      'Numeracy, logic & problem-solving',
+      'School readiness & independent confidence',
+    ],
+    IllustrationEl: SeniorKGIllustration,
+  },
 ]
 
 const containerVariants = {
@@ -109,7 +127,7 @@ export default function ProgramsSection() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4"
         >
           {programs.map((program) => (
             <motion.article
@@ -249,6 +267,31 @@ function JuniorKGIllustration() {
       <text x="108" y="100" fontFamily="Baloo 2" fontSize="13" fill="white" fontWeight="bold">=3</text>
       {/* Star above */}
       <polygon points="100,30 103,40 114,40 105,46 108,56 100,50 92,56 95,46 86,40 97,40" fill="#FFD43B" />
+    </svg>
+  )
+}
+
+function SeniorKGIllustration() {
+  return (
+    <svg viewBox="0 0 200 160" fill="none" className="w-40 h-32" aria-hidden="true">
+      <circle cx="100" cy="80" r="70" fill="#8B5CF6" opacity="0.1" />
+      {/* Graduation cap */}
+      <polygon points="100,48 145,66 100,84 55,66" fill="#172D63" />
+      <polygon points="100,78 135,66 100,56 65,66" fill="#8B5CF6" opacity="0.3" />
+      <rect x="75" y="78" width="50" height="22" rx="6" fill="#172D63" />
+      {/* Tassel */}
+      <circle cx="100" cy="66" r="3" fill="#FFD43B" />
+      <path d="M100 66 L138 82 L138 98" stroke="#FFD43B" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+      <polygon points="135,98 141,98 138,106" fill="#FFD43B" />
+      {/* Rocket / Pencil for next big step */}
+      <g transform="translate(42, 92) rotate(-30)">
+        <polygon points="12,0 24,12 0,12" fill="#FFD43B" />
+        <rect x="0" y="12" width="24" height="32" rx="3" fill="#8B5CF6" />
+        <rect x="0" y="44" width="24" height="8" rx="2" fill="#F51D2A" />
+      </g>
+      {/* Stars */}
+      <polygon points="160,38 162,44 168,44 163,48 165,54 160,50 155,54 157,48 152,44 158,44" fill="#FFD43B" />
+      <polygon points="38,50 40,55 45,55 41,58 43,63 38,60 33,63 35,58 31,55 36,55" fill="#8B5CF6" />
     </svg>
   )
 }

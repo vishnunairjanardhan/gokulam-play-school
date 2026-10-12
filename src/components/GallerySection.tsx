@@ -101,7 +101,7 @@ export default function GallerySection() {
             badge="Gallery"
             title="Our Happy "
             highlight="Little World"
-            subtitle="A glimpse into the joyful, colourful world at Gokulam Play School. Every day is an adventure!"
+            subtitle="A glimpse into the joyful, colourful world at Gokulam Nursery. Every day is an adventure!"
           />
         </motion.div>
 
